@@ -1,0 +1,38 @@
+<section id="one">
+    <h1>Academic Research</h1>
+    <img src="https://cloud.githubusercontent.com/assets/15173894/10796235/b51cdb3e-7d73-11e5-9e93-60dc414f98ce.png" style="height:260px;">
+    <p>For two years I studied soft matter as an undergraduate researcher at the Tuft University Guasto Lab My research sought to explore polarized light microscopy and high speed video analysis as a method to study liquid crystal dynamics. My purpose was to build a robust methodology that could be easily used by liquid crystal device designers to better understand the dynamics of their system. This work culminated in a senior thesis, for which I received High Thesis Honors. The sections below go into more detail on my research and the work that led to writing my thesis.</p>
+    <h2>Thesis:&nbsp;<span style="font-style:italic;">Dynamic Imaging of Carbon Nanotube - Liquid Crystal Suspensions</span></h2>
+    <img src="https://cloud.githubusercontent.com/assets/15173894/10795826/ef10a728-7d71-11e5-90fd-aaf4da5229f5.png" style="height:280px;">
+    <p>Schematic of a liquid crystal cell - when the circuit is closed an electric field aligns the molecules.</p>
+    <h2>Abstract</h2>
+    <p>Liquid crystals (LCs) are materials that exhibit fluid-like properties, while maintaining a degree of long-range crystalline order. They exhibit a variety of useful electro-optical properties and have found wide use in liquid crystal displays, optical telecommunications, and soft actuators. The speed at which the material responds to an applied electric field (switching speed) is a critical determinant of device performance. To study the spatiotemporal dynamics of LC materials, a novel method combining high-speed imaging with polarized light microscopy was developed, which provides micron spatial resolution and millisecond temporal resolution. This method was validated by quantifying the switching dynamics of a well-characterized liquid crystal (5CB) in a canonical Freedericksz cell geometry. High-speed polarization microscopy was then applied to measure the effect of carbon nanotube (CNT) dopants on LC switching dynamics. CNTs are found to reduce the switching speed by about 10% compared to pure 5CB liquid crystal over voltages ranging from 2.5 - 3.5V.</p>
+    <img src="https://cloud.githubusercontent.com/assets/15173894/10795663/3046915e-7d71-11e5-86d5-a6bf43a6a2a2.png" style="height:260px;">
+    <p>A schematic of the experimental apparatus</p>
+    <img src="https://cloud.githubusercontent.com/assets/15173894/10795771/aa7c3f64-7d71-11e5-9b5d-585441511938.jpg" style="height:260px;">
+    <p>The roataion stage fully built</p>
+    <img src="https://cloud.githubusercontent.com/assets/15173894/10769179/152eb6f0-7cbb-11e5-864d-74f11dfcc233.jpg" style="height:220px;" style="height:220px;">
+    <p>An oscilloscope and function generator were generate switching signals</p>
+    <h3>Designing the Test Apparatus</h3>
+    <p>A polarized light microscope magnified liquid crystal cells, which were then imaged by a high speed camera. To understand liquid crystal dynamics, an electric field was applied across the cell, causing the molecules to switch from a relaxed to an excited state. I configured a function generator to send periodic excitation pulses to the liquid crystal, which made rapidly conducting many trials trivial. The liquid crystal cell acts as a polarizer and is situated between a cross-polarizer configuration. The transmitted light to the camera is the polarization state change due to the liquid crystal.
+        <br>
+        <br>One issue I ran into during testing was aligning the cell at a constant angle with respect to the polarizers, as variation in this angle changes the transmitted light intensity. To hold this variable constant, I developed a 'rotation stage' fixture with the following features:</p>
+    <ul>
+        <li>Hash marks to measure angle to microscope polarizers</li>
+        <li>Insulation from electrical leads connected to liquid crystal cell</li>
+        <li>Thickness such that the rotation stage would not raise the position of the cell
+            <br>above the focal plane range of the microscope</li>
+        <li>Adjustable beveled clamping arms to steadily hold the test cell parallel to the rotation stage</li>
+        <li>Tight flatness tolerances such that the liquid crystal remains level</li>
+        <li>A relief area for the objective lens to view the test piece</li>
+    </ul>
+    <p>To make the base of the rotation stage, I used a CNC mill. The clamping arms were made using a laser cutter and acrylic. Today this methodology and my rotation stage are being used by researchers at this lab who continue to study liquid crystals.</p>
+    <img src="https://cloud.githubusercontent.com/assets/15173894/10795197/01f612e0-7d6f-11e5-9839-001210b457b6.png" style="height:220px;">
+    <p>Conversion of the video files into raw signals that were then further analyzed</p>
+    <p>High-speed videos taken of each experiment and I used image processing algorithms in MATLAB to extract quantitative information about the liquid crystal dynamics. One of the challenges of working with data sets of this type was that the signals produced through analysis were inherently very noisy. This noisy data also made it difficult to determine local extrema, which were important in determining the time taken for the liquid crystals to switch between two states.
+        <br>
+        <br>To mitigate the effect of noise, smoothing algorithms were used to condition that data and it was also analyzed in the frequency domain. To determine the significance of the data I collected, I used statistical techniques to compare it to other experiments. I wrote one MATLAB script that could be used globally on every trial to keep my techniques consistent across the many experiments I conducted. Writing and perfecting this code to overcome the issues of noise was one of the more challenging aspects of researching my thesis</p>
+    <!-- NEEDS WORK: Write a section about validating the new methodology/work with CNT cells and such -->
+</section>
+
+
